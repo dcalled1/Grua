@@ -15,17 +15,8 @@ Clone o descargue el repositorio para continuar.
 #### Software
 - [Editor de código Arduino](https://www.arduino.cc/en/Main/Software).
 - [Python 3 (versión sugerida: 3.7.3)](https://www.python.org/downloads/). Para acceder a una guía detallada de cómo descargar e instalar Python, haga click [aquí](https://es.wikihow.com/instalar-Python).
-- La librería pySerial (para comunicación Serial) para Python. Para instalarla debe ejecutar "pip install pyserial" (o "pip install --user pyserial" en caso de tener Python instalado localmente) en su terminal de comandos (recordar que debe tener Python instalado y agregado al PATH):
+- La librería pySerial (para comunicación Serial) para Python. Para instalarla debe ejecutar `pip install pyserial` (o `pip install --user pyserial` en caso de tener Python instalado localmente) en su terminal de comandos (recordar que debe tener Python instalado y agregado al PATH):
 
-Global:
-```
-pip install pyserial
-```
-
-Local:
-```
-pip install --user pyserial
-```
 
 ### Instalación 🔧
 
