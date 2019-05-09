@@ -19,13 +19,13 @@ Clone o descargue el repositorio para continuar.
 
 ### Instalación 🔧
 
-1. Abra el archivo [ControladorGrua.ino](https://github.com/dcalled1/Grua/blob/master/ControladorGrua/ControladorGrua.ino) con el IDE de Arduino. Luego, en Herramientas, seleccione la placa `Arduino/Genuino Mega or Mega 2560`.
+1. Abra el archivo [ControladorGrua.ino](ControladorGrua/ControladorGrua.ino) con el IDE de Arduino. Luego, en Herramientas, seleccione la placa `Arduino/Genuino Mega or Mega 2560`.
 2. Conecte su Arduino mediante el puerto USB, y posteriormente, conecte y configure los pines del Arduino para que concidan con los de la Grúa.
 3. Nuevamente en Herramientas, seleccione el puerto que le corresponde a su placa. Tenga en cuenta cuál puerto escogió, más adelante se utilizará.
 ![Selección de puerto](https://aprendiendoarduino.files.wordpress.com/2017/05/puerto_arduino1.png)
 4. Compile y suba el código a su Arduino. Ya puede cerrar el IDE de Arduino.
 Si la grúa esta encendida y se mueve hacia la derecha y luego hacia la izquierda, significa que vamos bien.
-5. Abra el archivo [InterfazGrua.py](https://github.com/dcalled1/Grua/blob/master/InterfazGrua.py) en su editor de código o IDE favorito, lueg, en la línea 7, cambie `'COM7'` por el código del puerto que usted identificó en en paso 3 (Para el ejemplo, la línea debería quedar `port = 'COM4'`).
+5. Abra el archivo [InterfazGrua.py](InterfazGrua.py) en su editor de código o IDE favorito, lueg, en la línea 7, cambie `'COM7'` por el código del puerto que usted identificó en en paso 3 (Para el ejemplo, la línea debería quedar `port = 'COM4'`).
 6. Ejecute el programa de la interfaz escribiendo en su terminal `python InterfazGrua.py` (o un IDE que ejecute código en Python, si lo dispone).
 
 ¡Listo!, ya puede probar su grúa.
@@ -74,7 +74,7 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia MIT License - mira el archivo [LICENSE](LICENSE) para detalles
 
 ## Expresiones de Gratitud 🎁
 
