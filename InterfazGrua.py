@@ -4,8 +4,8 @@ from tkinter import *
 import serial
 
 #Configuración Serial del arduino
-
-arduino=serial.Serial('COM7',9600,timeout=2)
+port = 'COM7'
+arduino=serial.Serial(port,9600,timeout=2)
 
 #Estados
 prim=False
