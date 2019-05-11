@@ -32,45 +32,86 @@ Si la grúa esta encendida y se mueve hacia la derecha y luego hacia la izquierd
 
 **Nota:** Al momento de ejecutar el programa de Python, es recomendable NO tener abierto el IDE de Arduino o cualquier otro programa que utilice los puertos seriales.
 
-## Ejecutando las pruebas ⚙️
+## Instrucciones de la interfaz ⌨️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+### Controles manuales ️🔩
 
-### Analice las pruebas end-to-end 🔩
+![Botón arriba](resources/flechaarriba.PNG)
 
-_Explica que verifican estas pruebas y por qué_
+El botón se una para hacer que la grúa suba desde su posición actual por 150 milisegundos.
 
-```
-Da un ejemplo
-```
+---
 
-### Y las pruebas de estilo de codificación ⌨️
+![Botón abajo](resources/Flechabajo.PNG)
 
-_Explica que verifican estas pruebas y por qué_
+El botón se una para hacer que la grúa baje desde su posición actual por 150 milisegundos.
 
-```
-Da un ejemplo
-```
+---
 
-## Deployment 📦
+![Botón derecha](resources/Flechader.PNG)
 
-_Agrega notas adicionales sobre como hacer deploy_
+El botón se una para hacer que la grúa vaya hacia la derecha desde su posición actual por 150 milisegundos.
 
-## Construido con 🛠️
+---
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+![Botón izquierda](resources/Flechaizq.PNG)
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+El botón se una para hacer que la grúa vaya hacia la izquierda desde su posición actual por 150 milisegundos.
+
+---
+
+![Botón izquierda](resources/Flechaizq.PNG)
+
+El botón se una para hacer que la grúa vaya hacia la izquierda desde su posición actual por 150 milisegundos.
+
+---
+
+![Coger/Poner](resources/rayo.png) 
+
+El botón funciona como un toggle, haciendo que la grúa baje desde su posición actual, energice o desenergice el imán (según sea requerido), y posteriormente suba para luego parar.
+
+---
+
+### Controles por estaciones (automáticos) 📦
+
+La sección `Coger de` le permite escoger una estación y coger una ficha (_si es que la hay_), para luego quedarse estática; hasta que, en la sección `Llevar hasta`, pueda escoger una estación en dónde dejar la ficha anteriormente recogida.
+
+---
+
+La sección `Transportar desde, hasta` le permite realizar la acción conjunta de escoger una estación de origen y una de destino para transportar una ficha (_si es que la hay_). Notar que es una combinación de `Coger de` y `Llevar hasta`.
+
+---
+
+La sección `Ir hasta` le permite escoger una estación mediante los botones `P1`, `P2` y `P3` e ir a ella de forma rápida. Es recomendable usar esta opción junto con el botón `Coger/Poner`, explicado en la sección de controles manuales.
+
+---
+
+Con el botón `Jugar Hanoi`, usted solo tendrá que escoger un origen y un destino para que la grúa haga lo suyo. 
+
+___NOTA:___ El juego sólo está disponible con 3 piezas, y usted deberá poner la torre inicial antes de comenzar a jugar.
+
+## Protocolos de Comunicación 🛠️
+
+La interfaz se conecta mediante el puerto serial con el Arduino basado en un procolo de comunicaciones unidireccional `Interfaz -> Arduino` con las siguientes reglas de codificación:
+
+- Se enviarán mensajes de 3 (tres) dígitos como máximo.
+- El dígito correspondiente a las unidades es considerado como la orden principal, quien orquesta todo (Orden 1).
+- El dígito correspondiente a las decenas, es la orden secundaria u información requerida (Orden 2).
+- El dígito correspondiente a las centenas, es la información requerida (Orden 3).
+
+A continuación un a tabla que especifica la función de cada orden:
+
+![Tabla órdenes](resources/instrucciones.png)
+
+___NOTA:___ La descripción de cada función se encuentra en los comentarios del archivo [ControladorGrua.ino](ControladorGrua/ControladorGrua.ino), justo arriba de la función con el mismo nombre.
+
 
 
 ## Autores ✒️
 
 * **David Calle Daza** - *201710031010* - [dcalled1](https://github.com/dcalled1)
-* **Felipe Ríos** - *código* - [friosl](https://github.com/friosl)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
+* **Felipe Ríos Lopez** - *código* - [friosl](https://github.com/friosl)
+ 
 
 ## Licencia 📄
 
