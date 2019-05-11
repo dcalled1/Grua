@@ -110,7 +110,7 @@ ___NOTA:___ La descripción de cada función se encuentra en los comentarios del
 ## Autores ✒️
 
 * **David Calle Daza** - *201710031010* - [dcalled1](https://github.com/dcalled1)
-* **Felipe Ríos Lopez** - *código* - [friosl](https://github.com/friosl)
+* **Felipe Ríos Lopez** - *201810136010* - [friosl](https://github.com/friosl)
  
 
 ## Licencia 📄
